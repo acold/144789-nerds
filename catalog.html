@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Нёрдс каталог</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="logo">
+					<a href="/">
+						<img src="logo.png" width="130" height="50" alt="логотип">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li class="active">
+							Магазин
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					<a class="basket" href="#">корзина</a>
+				</div>
+			</div>
+		</header>
+		<main class="container">
+			<div class="banner-block">
+				<h1>Добро пожаловать в магазин готовых макетов</h1>
+			</div>
+			<div class="catalog">
+				<div class="catalog-filter">
+					<form action="" method="get">
+							<h2>СТОИМОСТЬ:</h2>
+							<!--
+							Не знаю как делать ползунок c двумя пилюпками, наверное это не HTML'ем делают? 
+							-->
+							<label for='price1'>От</label>
+							<input type="text" name="price1" id="price1" placeholder="0" >
+							<label for='price2'>До:</label>
+							<input type="text" name="price2" id="price2" placeholder="15000">
+							<h2>Сетка:</h2>
+							<label for="gridadaptive">Адаптивная</label>
+							<input id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
+							<label for="gridfix">Фиксированная</label>
+							<input id="gridfix" type="radio" value="Фиксированная" name="product-type">
+							<label for="gridflex">Резиновая</label>
+							<input id="gridflex" type="radio" value="Резиновая" name="product-type">
+							<h2>ОСОБЕННОСТИ:</h2>
+							<label for="slider">Слайдер</label>
+							<input id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
+							<label for="privileges">Блок преимуществ</label>
+							<input id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
+							<label for="news">Новости</label>
+							<input id="news" type="checkbox" value="Новости" name="speciality" checked>
+							<label for="gallery">Галерея</label>
+							<input id="gallery" type="checkbox" value="Галерея" name="speciality" >
+							<label for="basket">Корзина</label>
+							<input id="basket" type="checkbox" value="Корзина" name="speciality" >
+							<button class="show-item" type="submit">Показать</button>
+					</form>
+				</div>
+				<div class="sort-item">
+					<p>СОРТИРОВАТЬ:</p>
+					<ul>
+						<li>
+							<a href="#">ПО ЦЕНЕ</a>
+						</li>
+						<li>
+							<a href="#">ПО ТИПУ</a>
+						</li>
+						<li>
+							<a href="#">ПО ФУНКЦИОНАЛУ</a>
+						</li>
+					</ul>
+					<a class="up" href="#"></a>
+					<a class="down" href="#"></a>
+				</div>
+				<div class="item-list">
+					<div class="item">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#">
+							<img src="item.jpg" height="240" width="235">
+						</a>
+						<div class="item-fullinfo">
+							<a href="#" class="item-name">AVIATOR 
+							<span class="item-info">Одностраничный vакет с авторским дизайном</span>
+							</a>
+							<a class="cost-item" href="#">8000 Р.</a>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#">
+							<img src="item.jpg" height="240" width="235">
+						</a>
+						<div class="item-fullinfo">
+							<a href="#" class="item-name">Sunset 
+							<span class="item-info">Интернет-магазин с личным кабинетом</span>
+							</a>
+							<a class="cost-item" href="#">10000 Р.</a>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#">
+							<img src="item.jpg" height="240" width="235">
+						</a>
+						<div class="item-fullinfo">
+							<a href="#" class="item-name">FORTE 
+							<span class="item-info">Отличный макет для личного блога</span>
+							</a>
+							<a class="cost-item" href="#">5000 Р.</a>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#">
+							<img src="item.jpg" height="240" width="235">
+						</a>
+						<div class="item-fullinfo">
+							<a href="#" class="item-name">Modern Organic THAI
+							<span class="item-info">Сайт для ресторана быстрого питания</span>
+							</a>
+							<a class="cost-item" href="#">12000 Р.</a>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#">
+							<img src="item.jpg" height="240" width="235">
+						</a>
+						<div class="item-fullinfo">
+							<a href="#" class="item-name">AVENUE 
+							<span class="item-info">Макет для блога о путешествиях</span>
+							</a>
+							<a class="cost-item" href="#">8000 Р.</a>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#">
+							<img src="item.jpg" height="240" width="235">
+						</a>
+						<div class="item-fullinfo">
+							<a href="#" class="item-name">DOVETAIL 
+							<span class="item-info">Интернет-магазин с галереей товаров</span>
+							</a>
+							<a class="cost-item" href="#">14000 Р.</a>
+						</div>
+					</div>
+				</div>
+				<ul class="pagination">
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li >
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">следующая</a>
+					</li>
+				</ul>
+			<div class="maps">
+				<div class="maps-visual">
+				</div>
+				<div class="maps-info">
+					<p>NЁRDS DESIGN STUDIO</p>
+					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#" class="feedback">напишите нам</a>
+				</div>
+			</div>
+			<div class="feedback-form">
+				<form action="" class="write-us" method="post">
+					<label for="username">Ваше имя:</label>
+					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+					<label for="useremail">Ваш e-mail:</label>
+					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
+					<label for="usermessage">Текст письма:</label>
+					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+				<button class="btn-сlose">Закрыть</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-social">
+				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
+				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
+				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
+			</div>
+			<div class="saleN">
+				<h2>Давайте дружить, это выгодно!</h2>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
+	</body>
+</html>
