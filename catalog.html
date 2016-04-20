@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Нёрдс каталог</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="logo">
+					<a href="/">
+						<img src="logo.png" width="130" height="50" alt="логотип">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li class="active">
+							Магазин
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					<a class="basket" href="#">Корзина</a>
+				</div>
+			</div>
+		</header>
+		<main class="container">
+			<div class="slider-block">
+				<h1>Добро пожаловать в магазин готовых макетов</h1>
+			</div>
+			<div class="catalog">
+				<div class="catalog-filter">
+					<form action="" method="get">
+							<h2>Стоимость:</h2>
+							<input type="range" name="price" min="0" max="15000" step="100" value="7500">
+                            <input type="text" name="price-from" id="price-from" value="0">
+                            <label for="from">От</label>
+                            <input type="text" name="price-to" id="price-to" value="15000">
+                            <label for="from">До</label>
+							<h2>Сетка:</h2>
+							<label for="gridadaptive">Адаптивная</label>
+							<input id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
+							<label for="gridfix">Фиксированная</label>
+							<input id="gridfix" type="radio" value="Фиксированная" name="product-type">
+							<label for="gridflex">Резиновая</label>
+							<input id="gridflex" type="radio" value="Резиновая" name="product-type">
+							<h2>ОСОБЕННОСТИ:</h2>
+							<label for="slider">Слайдер</label>
+							<input id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
+							<label for="privileges">Блок преимуществ</label>
+							<input id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
+							<label for="news">Новости</label>
+							<input id="news" type="checkbox" value="Новости" name="speciality" checked>
+							<label for="gallery">Галерея</label>
+							<input id="gallery" type="checkbox" value="Галерея" name="speciality" >
+							<label for="basket">Корзина</label>
+							<input id="basket" type="checkbox" value="Корзина" name="speciality" >
+							<button class="show-item" type="submit">Показать</button>
+					</form>
+				</div>
+				<div class="sort-item">
+					<p>Сортировать:</p>
+					  <ul>
+						 <li>
+							<a href="#">По цене</a>
+						 </li>
+						 <li>
+							<a href="#">По типу</a>
+						 </li>
+						 <li>
+							<a href="#">По функционалу</a>
+						 </li>
+					  </ul>
+					<a class="up" href="#"></a>
+					<a class="down" href="#"></a>
+				</div>
+				<div class="item-list">
+					<img src="aviator.jpg" width="240" height="240" alt="Авиатор">
+                    <div class="item-description">
+                       <h1 class="item-title"><a href="#">Aviator</a></h1>
+                       <p>Одностраничный макет с авторским дизайном</p>
+                       <a class="btn-red" href="#">8000 P.</a>
+					</div>
+                </div>	
+				<div class="item-list">
+				     <img src="sunset.jpg" width="240" height="240" alt="Закат">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Sunset</a></h1>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <a class="btn-red" href="#">10000 P.</a>
+                      </div>
+				</div>
+				<div class="item-list">
+				     <img src="forte.jpg" width="240" height="240" alt="Форте">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Forte</a></h1>
+                        <p>Отличный макет для личного блога</p>
+                        <a class="btn-red" href="#">5000 P.</a>
+                     </div>
+				</div>
+				<div class="item-list">
+				     <img src="modern.jpg" width="240" height="240" alt="Современный">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Modern Organic Thai</a></h1>
+                        <p>Сайт для ресторана быстрого питания</p>
+                        <a class="btn-red" href="#">12000 P.</a>
+                     </div>
+				</div>
+				<div class="item-list">
+		             <img src="avenue.jpg" width="240" height="240" alt="Авеню">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Avenue</a></h1>
+                        <p>Макет для блога о путешествиях</p>
+                        <a class="btn-red" href="#">8000 P.</a>
+                     </div>
+				</div>
+				<div class="item-list">
+				     <img src="dovetail.jpg" width="240" height="240" alt="Ласточкин хвост">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Dovetail</a></h1>
+                        <p>Интернет-магазин с галереей товаров</p>
+                        <a class="btn-red" href="#">14000 р.</a>
+                     </div>
+				</div>
+				<ul class="pages-num">
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li >
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">Следующая</a>
+					</li>
+				</ul>
+			  <div class="maps">
+				  <div class="maps-visual">
+				     <img src="map.jpg" width="100%" height="400" alt="Карта проезда">
+				  </div>
+				<div class="maps-info">
+					<p>Nёrds design studio</p>
+					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#" class="feedback">Напишите нам</a>
+				</div>
+			</div>
+			<div class="feedback-form">
+				<form action="" class="write-us" method="post">
+					<label for="username">Ваше имя:</label>
+					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+					<label for="useremail">Ваш e-mail:</label>
+					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
+					<label for="usermessage">Текст письма:</label>
+					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+				<button class="btn-сlose">Закрыть</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-social">
+				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
+				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
+				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
+			</div>
+			<div class="sale">
+				<h2>Давайте дружить, это выгодно!</h2>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
+	</body>
+</html>
