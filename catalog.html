@@ -29,25 +29,23 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a class="basket" href="#">корзина</a>
+					<a class="basket" href="#">Корзина</a>
 				</div>
 			</div>
 		</header>
 		<main class="container">
-			<div class="banner-block">
+			<div class="slider-block">
 				<h1>Добро пожаловать в магазин готовых макетов</h1>
 			</div>
 			<div class="catalog">
 				<div class="catalog-filter">
 					<form action="" method="get">
-							<h2>СТОИМОСТЬ:</h2>
-							<!--
-							Не знаю как делать ползунок c двумя пилюпками, наверное это не HTML'ем делают? 
-							-->
-							<label for='price1'>От</label>
-							<input type="text" name="price1" id="price1" placeholder="0" >
-							<label for='price2'>До:</label>
-							<input type="text" name="price2" id="price2" placeholder="15000">
+							<h2>Стоимость:</h2>
+							<input type="range" name="price" min="0" max="15000" step="100" value="7500">
+                            <input type="text" name="price-from" id="price-from" value="0">
+                            <label for="from">От</label>
+                            <input type="text" name="price-to" id="price-to" value="15000">
+                            <label for="from">До</label>
 							<h2>Сетка:</h2>
 							<label for="gridadaptive">Адаптивная</label>
 							<input id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
@@ -70,120 +68,70 @@
 					</form>
 				</div>
 				<div class="sort-item">
-					<p>СОРТИРОВАТЬ:</p>
-					<ul>
-						<li>
-							<a href="#">ПО ЦЕНЕ</a>
-						</li>
-						<li>
-							<a href="#">ПО ТИПУ</a>
-						</li>
-						<li>
-							<a href="#">ПО ФУНКЦИОНАЛУ</a>
-						</li>
-					</ul>
+					<p>Сортировать:</p>
+					  <ul>
+						 <li>
+							<a href="#">По цене</a>
+						 </li>
+						 <li>
+							<a href="#">По типу</a>
+						 </li>
+						 <li>
+							<a href="#">По функционалу</a>
+						 </li>
+					  </ul>
 					<a class="up" href="#"></a>
 					<a class="down" href="#"></a>
 				</div>
 				<div class="item-list">
-					<div class="item">
-						<ul class="mini-pagination">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<a href="#">
-							<img src="item.jpg" height="240" width="235">
-						</a>
-						<div class="item-fullinfo">
-							<a href="#" class="item-name">AVIATOR 
-							<span class="item-info">Одностраничный vакет с авторским дизайном</span>
-							</a>
-							<a class="cost-item" href="#">8000 Р.</a>
-						</div>
+					<img src="aviator.jpg" width="240" height="240" alt="Авиатор">
+                    <div class="item-description">
+                       <h1 class="item-title"><a href="#">Aviator</a></h1>
+                       <p>Одностраничный макет с авторским дизайном</p>
+                       <a class="btn-red" href="#">8000 P.</a>
 					</div>
-					<div class="item">
-						<ul class="mini-pagination">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<a href="#">
-							<img src="item.jpg" height="240" width="235">
-						</a>
-						<div class="item-fullinfo">
-							<a href="#" class="item-name">Sunset 
-							<span class="item-info">Интернет-магазин с личным кабинетом</span>
-							</a>
-							<a class="cost-item" href="#">10000 Р.</a>
-						</div>
-					</div>
-					<div class="item">
-						<ul class="mini-pagination">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<a href="#">
-							<img src="item.jpg" height="240" width="235">
-						</a>
-						<div class="item-fullinfo">
-							<a href="#" class="item-name">FORTE 
-							<span class="item-info">Отличный макет для личного блога</span>
-							</a>
-							<a class="cost-item" href="#">5000 Р.</a>
-						</div>
-					</div>
-					<div class="item">
-						<ul class="mini-pagination">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<a href="#">
-							<img src="item.jpg" height="240" width="235">
-						</a>
-						<div class="item-fullinfo">
-							<a href="#" class="item-name">Modern Organic THAI
-							<span class="item-info">Сайт для ресторана быстрого питания</span>
-							</a>
-							<a class="cost-item" href="#">12000 Р.</a>
-						</div>
-					</div>
-					<div class="item">
-						<ul class="mini-pagination">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<a href="#">
-							<img src="item.jpg" height="240" width="235">
-						</a>
-						<div class="item-fullinfo">
-							<a href="#" class="item-name">AVENUE 
-							<span class="item-info">Макет для блога о путешествиях</span>
-							</a>
-							<a class="cost-item" href="#">8000 Р.</a>
-						</div>
-					</div>
-					<div class="item">
-						<ul class="mini-pagination">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<a href="#">
-							<img src="item.jpg" height="240" width="235">
-						</a>
-						<div class="item-fullinfo">
-							<a href="#" class="item-name">DOVETAIL 
-							<span class="item-info">Интернет-магазин с галереей товаров</span>
-							</a>
-							<a class="cost-item" href="#">14000 Р.</a>
-						</div>
-					</div>
+                </div>	
+				<div class="item-list">
+				     <img src="sunset.jpg" width="240" height="240" alt="Закат">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Sunset</a></h1>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <a class="btn-red" href="#">10000 P.</a>
+                      </div>
 				</div>
-				<ul class="pagination">
+				<div class="item-list">
+				     <img src="forte.jpg" width="240" height="240" alt="Форте">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Forte</a></h1>
+                        <p>Отличный макет для личного блога</p>
+                        <a class="btn-red" href="#">5000 P.</a>
+                     </div>
+				</div>
+				<div class="item-list">
+				     <img src="modern.jpg" width="240" height="240" alt="Современный">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Modern Organic Thai</a></h1>
+                        <p>Сайт для ресторана быстрого питания</p>
+                        <a class="btn-red" href="#">12000 P.</a>
+                     </div>
+				</div>
+				<div class="item-list">
+		             <img src="avenue.jpg" width="240" height="240" alt="Авеню">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Avenue</a></h1>
+                        <p>Макет для блога о путешествиях</p>
+                        <a class="btn-red" href="#">8000 P.</a>
+                     </div>
+				</div>
+				<div class="item-list">
+				     <img src="dovetail.jpg" width="240" height="240" alt="Ласточкин хвост">
+                     <div class="item-description">
+                        <h1 class="item-title"><a href="#">Dovetail</a></h1>
+                        <p>Интернет-магазин с галереей товаров</p>
+                        <a class="btn-red" href="#">14000 р.</a>
+                     </div>
+				</div>
+				<ul class="pages-num">
 					<li class="active">
 						<a href="#">1</a>
 					</li>
@@ -194,17 +142,18 @@
 						<a href="#">3</a>
 					</li>
 					<li>
-						<a href="#">следующая</a>
+						<a href="#">Следующая</a>
 					</li>
 				</ul>
-			<div class="maps">
-				<div class="maps-visual">
-				</div>
+			  <div class="maps">
+				  <div class="maps-visual">
+				     <img src="map.jpg" width="100%" height="400" alt="Карта проезда">
+				  </div>
 				<div class="maps-info">
-					<p>NЁRDS DESIGN STUDIO</p>
+					<p>Nёrds design studio</p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="feedback">напишите нам</a>
+					<a href="#" class="feedback">Напишите нам</a>
 				</div>
 			</div>
 			<div class="feedback-form">
@@ -226,7 +175,7 @@
 				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
 				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
 			</div>
-			<div class="saleN">
+			<div class="sale">
 				<h2>Давайте дружить, это выгодно!</h2>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
