@@ -5,11 +5,128 @@ body {
 	font-family: "Roboto", "Arial", sans-serif;
     color: #283136;
 }
+
 h1 {
 	line-height: normal;
 	font-size: 40px;
+    color: #000000;
 }
+
 h2 {
 	line-height: normal;
-	font-size: 36px;
+	font-size: 18px;
+    color: #000000;    
+}
+
+.main-header,
+.slides,
+.servises,
+.about,
+.sponsorship,
+.maps,
+.footer {
+  width: 880px;	
+}
+
+
+.logo {
+  width: 140px;
+  float: left;
+}
+
+.main-navigation {
+  width: 560px;
+  float: left;
+}
+
+.basket {
+  width: 90px;
+  float: right;  
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;	
+}
+
+.slide-1-description {
+  width: 390px;
+  float: left;
+}
+
+.slide-1 img {
+  float: right;	
+}
+
+.slide-2-description {
+  width: 390px;
+  float: left;	
+}
+
+.slide-2 img {
+  float: right;	
+}
+
+.slide-3-description {
+  width: 390px;
+  float: left;	
+}
+.slide-3 img {
+  float: right;	
+}
+
+.site,
+.apps,
+.presentations {
+  width: 240px;	
+}
+
+.site {
+  float: left;
+  margin-right: 80px;
+}
+
+.apps {
+  float: left;
+    margin-right: 80px;
+}
+
+.presentations {
+  float: right;
+}
+
+.about-us {
+  width: 630px;
+  float: left; 
+}
+
+.about-how {
+  width: 250px;
+  float: right;
+}
+
+.glukhanko-logo,
+.academy-logo,
+.barbershop-logo {
+  display: inline-block;  
+  vertical-align: middle;	
+}
+
+.sponsorship .glukhanko-logo {
+  margin-left: 10px;
+}
+
+.sponsorship .glukhanko-logo,
+.sponsorship .academy-logo {
+  margin-right: 80px;   	
+}
+
+.footer-social {
+  width: 240px;	
+  float: left;
+}
+.sale {
+  width: 570px;
+  float: right;
 }
