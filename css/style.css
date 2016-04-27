@@ -1,132 +1,235 @@
 body {
-	line-height: 22px;
-	font-size: 16px;
-	font-weight: normal;
-	font-family: "Roboto", "Arial", sans-serif;
-    color: #283136;
+    width: 1200px;
+    height: 2256px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Roboto Medium", "Arial", sans-serif;
 }
 
 h1 {
-	line-height: normal;
-	font-size: 40px;
+    font-size: 36px;
+    line-height: 36px;
     color: #000000;
+    font-weight: normal;
+    font-family: "Roboto Medium", "Arial", sans-serif;
 }
 
 h2 {
-	line-height: normal;
-	font-size: 18px;
-    color: #000000;    
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Roboto Medium", "Arial", sans-serif;
 }
 
-.main-header,
-.slides,
-.servises,
-.about,
-.sponsorship,
-.maps,
-.footer {
-  width: 880px;	
+/* обшие стили сетки*/
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+    outline: 1px solid green;
 }
 
+.main-header {
+    margin-bottom: 80px;
+    outline: 2px solid red;
+    min-height: 70px;
+}
 
 .logo {
-  width: 140px;
-  float: left;
+    float: left;
+    width: 139px;
+    height: 56px;
+    margin-right: 60px;
+    margin-top: 20px;
+    outline: 2px solid yellow;
 }
 
 .main-navigation {
-  width: 560px;
-  float: left;
+    float: left;
+    width: 460px;
+    outline: 2px solid yellow;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-.basket {
-  width: 90px;
-  float: right;  
+.user-block {
+    float: right;
+    width: 95px;
+    outline: 2px solid yellow;
+    margin-top: 60px;
 }
 
-.clearfix::after{
-  content: "";
-  display: table;
-  clear: both;	
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.slide-1-description {
-  width: 390px;
-  float: left;
+.maps {
+    clear: both;
+    outline: 2px solid yellow;
 }
 
-.slide-1 img {
-  float: right;	
+.footer {
+    margin-top: 80px;
+    outline: 1px soild red;
 }
 
-.slide-2-description {
-  width: 390px;
-  float: left;	
+.footer-social {
+    width: 240px;
+    float: left;
+    margin-right: 70px;
+    outline: 2px solid yellow;
 }
 
-.slide-2 img {
-  float: right;	
+.sale {
+    width: 570px;
+    float: right;
+    outline: 2px solid yellow;
 }
 
-.slide-3-description {
-  width: 390px;
-  float: left;	
-}
-.slide-3 img {
-  float: right;	
+.write-us {
+    display: none;
 }
 
-.site,
-.apps,
-.presentations {
-  width: 240px;	
+/*сетка index*/
+
+.slides {
+    clear: both;
+    outline: 2px solid yellow;
+    margin-bottom: 80px;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(3) {
+    display: none;
+}
+
+.slide-description {
+    float: left;
+    width: 400px;
+}
+
+.slide-right {
+    float: right;
+    width: 338;
+}
+
+.servises {
+    outline: 2px solid yellow;
+    margin-bottom: 80px;
 }
 
 .site {
-  float: left;
-  margin-right: 80px;
-}
-
-.apps {
-  float: left;
+    float: left;
+    width: 240px;
     margin-right: 80px;
 }
 
-.presentations {
-  float: right;
+.apps {
+    float: left;
+    width: 240px;
+}
+
+.presentation {
+    float: right;
+    width: 240px;
+}
+
+.about {
+    margin-bottom: 80px;
+    outline: 2px solid yellow;
 }
 
 .about-us {
-  width: 630px;
-  float: left; 
+    margin-bottom: 60px;
 }
 
-.about-how {
-  width: 250px;
-  float: right;
+.content-left {
+    float: left;
+    width: 630px;
+    outline: 2px solid yellow;
+}
+
+.content-right {
+    float: right;
+    width: 240px;
+    outline: 2px solid yellow;
 }
 
 .glukhanko-logo,
 .academy-logo,
 .barbershop-logo {
-  display: inline-block;  
-  vertical-align: middle;	
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .sponsorship .glukhanko-logo {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .sponsorship .glukhanko-logo,
 .sponsorship .academy-logo {
-  margin-right: 80px;   	
+    margin-right: 80px;
 }
 
-.footer-social {
-  width: 240px;	
-  float: left;
+
+/*сетка catalog*/
+
+.header-slogan {
+    clear: both;
+    width: 650px;
+    margin: 80px auto;
+    outline: 2px solid yellow;
+    display: block;
 }
-.sale {
-  width: 570px;
-  float: right;
+
+.sidebar {
+    float: left;
+    width: 240px;
+    outline: 2px solid yellow;
+}
+
+.index-content-catalog {
+    float: right;
+    width: 560px;
+    outline: 2px solid yellow;
+    margin-bottom: 80px;
+}
+
+.gallery {
+    font-size: 0;
+}
+
+.item-list {
+    display: inline-block;
+    width: 240px;
+    font-size: 14px;
+    vertical-align: top;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+
+.item-list:nth-child(2n) {
+    margin-right: 0;
+}
+
+.sort-item p {
+    float: left;
+    width: 90px;
+    margin-right: 40px;
+}
+
+.sorting-btn-wrapper {
+    float: left;
+    width: 310px;
+}
+
+.sorting-item-wrapper {
+    float: right;
+    width: 30px;
 }

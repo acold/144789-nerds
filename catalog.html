@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="logo">
 					<a href="/">
 						<img src="img/nerds-logo.png" width="139" height="56" alt="логотип">
@@ -32,62 +32,86 @@
 				<div class="user-block">
 					<a class="basket" href="#">Корзина</a>
 				</div>
+				<span class="header-slogan">Добро пожаловать в магазин  готовых макетов</span>
 			</div>
 		</header>
 		<main class="container">
-			<div class="slider-block">
-				<h1>Добро пожаловать в магазин готовых макетов</h1>
-			</div>
-			<div class="catalog">
-				<div class="catalog-filter">
-					<form action="" method="get">
-							<h2>Стоимость:</h2>
-							<input type="range" name="price" min="0" max="15000" step="100" value="7500">
-                            <input type="text" name="price-from" id="price-from" value="0">
-                            <label for="from">От</label>
-                            <input type="text" name="price-to" id="price-to" value="15000">
-                            <label for="from">До</label>
-							<h2>Сетка:</h2>
-							<label for="gridadaptive">Адаптивная</label>
-							<input id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
-							<label for="gridfix">Фиксированная</label>
-							<input id="gridfix" type="radio" value="Фиксированная" name="product-type">
-							<label for="gridflex">Резиновая</label>
-							<input id="gridflex" type="radio" value="Резиновая" name="product-type">
-							<h2>ОСОБЕННОСТИ:</h2>
-							<label for="slider">Слайдер</label>
-							<input id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
-							<label for="privileges">Блок преимуществ</label>
-							<input id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
-							<label for="news">Новости</label>
-							<input id="news" type="checkbox" value="Новости" name="speciality" checked>
-							<label for="gallery">Галерея</label>
-							<input id="gallery" type="checkbox" value="Галерея" name="speciality" >
-							<label for="basket">Корзина</label>
-							<input id="basket" type="checkbox" value="Корзина" name="speciality" >
-							<button class="show-item" type="submit">Показать</button>
-					</form>
+			<div class="sidebar">
+					<form name="filter" action="/echo" method="get">
+				<fieldset>
+			  	<legend>Стоимость:</legend>
+			  	<div class="price-range-wrapper">
+			  		<input type="range" name="price-range" id="price-range-field">
+			  	</div>
+			  	<div class="from-field-wrapper">
+			  	  <label for="from-field">от</label><br>
+						<input type="text" name="from" value="0" id="from-field">
+					</div>
+					<div class="to-field-wrapper">
+						<label for="to-field">до</label><br>
+					  <input type="text" name="to" value="15000" id="to-field"><br>
+					</div>
+				</fieldset>
+				<fieldset>
+        	<legend>Сетка:</legend>
+        	<div class="layout-field-wrapper">
+						<input type="radio" name="layout" id="adaptive">
+						<label for="adaptive">Адаптивная</label><br>
+					</div>
+					<div class="layout-field-wrapper">
+						<input type="radio" name="layout" id="fixed">
+						<label for="fixed">Фиксированная</label><br>
+					</div>
+					<div class="layout-field-wrapper">
+						<input type="radio" name="layout" id="fluid">
+						<label for="fluid">Резиновая</label><br>
+					</div>
+				</fieldset>
+				<fieldset>
+        	<legend>Особенности:</legend>
+        	<div class="features-field-wrapper">
+						<input type="checkbox" name="slider" id="slider-field" checked>
+						<label for="slider-field">Слайдер</label><br>
+					</div>
+					<div class="features-field-wrapper">
+        		<input type="checkbox" name="features" id="fetures-field">
+        		<label for="fetures-field">Блок преимуществ</label><br>
+        	</div>
+        	<div class="features-field-wrapper">
+        		<input type="checkbox" name="news" id="news-field" checked>
+        		<label for="news-field">Новости</label><br>
+        	</div>
+        	<div class="features-field-wrapper">
+        		<input type="checkbox" name="gallery" id="gallery-field">
+        		<label for="gallery-field">Галерея</label><br>
+        	</div>
+        	<div class="features-field-wrapper">
+        		<input type="checkbox" name="basket" id="basket-fied">
+        		<label for="basket-fied">Корзина</label><br>
+        	</div>
+        </fieldset>
+        <input type="submit" value="отправить">
+			</form>
+		</div>
+           <div class="index-content-catalog">
+             <div class="sort-item clearfix">
+				<p>Сортировать:</p>
+				<div class="sorting-btn-wrapper">
+	  			  <a class="sorting-btn" href="#">По цене</a>
+	  			  <a class="sorting-btn" href="#">По типу</a>
+	  			  <a class="sorting-btn" href="#">По функционалу</a>
+	  		    </div>
+	  		    <div class="sorting-item-wrapper">
+					<button class="up"></button>
+					<button class="down"></button>
+                 </div>	
 				</div>
-				<div class="sort-item">
-					<p>Сортировать:</p>
-					  <ul>
-						 <li>
-							<a href="#">По цене</a>
-						 </li>
-						 <li>
-							<a href="#">По типу</a>
-						 </li>
-						 <li>
-							<a href="#">По функционалу</a>
-						 </li>
-					  </ul>
-					<a class="up" href="#"></a>
-					<a class="down" href="#"></a>
-				</div>
+				<div class="gallery">
 				<div class="item-list">
-					<img src="img/aviator.png" width="240" height="269" alt="Авиатор">
+					<img src="img/aviator.png" width="240" height="240" alt="Авиатор">
                     <div class="item-description">
-                       <h1 class="item-title"><a href="#">Aviator</a></h1>
+                       <a class="item-title" href="#"> <h2>Aviator</h2>
+                        </a>
                        <p>Одностраничный макет с авторским дизайном</p>
                        <a class="btn-red" href="#">8000 P.</a>
 					</div>
@@ -95,7 +119,8 @@
 				<div class="item-list">
 				     <img src="img/sunset.png" width="240" height="240" alt="Закат">
                      <div class="item-description">
-                        <h1 class="item-title"><a href="#">Sunset</a></h1>
+                         <a class="item-title" href="#"> <h2>Sunset</h2>
+                         </a>
                         <p>Интернет-магазин с личным кабинетом</p>
                         <a class="btn-red" href="#">10000 P.</a>
                       </div>
@@ -103,7 +128,8 @@
 				<div class="item-list">
 				     <img src="img/forte.png" width="240" height="240" alt="Форте">
                      <div class="item-description">
-                        <h1 class="item-title"><a href="#">Forte</a></h1>
+                         <a class="item-title" href="#"> <h2>Forte</h2>
+                         </a>
                         <p>Отличный макет для личного блога</p>
                         <a class="btn-red" href="#">5000 P.</a>
                      </div>
@@ -111,7 +137,8 @@
 				<div class="item-list">
 				     <img src="img/modern-organic.png" width="240" height="240" alt="Современный">
                      <div class="item-description">
-                        <h1 class="item-title"><a href="#">Modern Organic Thai</a></h1>
+                         <a class="item-title" href="#"> <h2>Modern Organic Thai</h2>
+                         </a>
                         <p>Сайт для ресторана быстрого питания</p>
                         <a class="btn-red" href="#">12000 P.</a>
                      </div>
@@ -119,7 +146,8 @@
 				<div class="item-list">
 		             <img src="img/avenue.png" width="240" height="240" alt="Авеню">
                      <div class="item-description">
-                        <h1 class="item-title"><a href="#">Avenue</a></h1>
+                         <a class="item-title" href="#"> <h2>Avenue</h2>
+                         </a>
                         <p>Макет для блога о путешествиях</p>
                         <a class="btn-red" href="#">8000 P.</a>
                      </div>
@@ -127,59 +155,53 @@
 				<div class="item-list">
 				     <img src="img/dovetail.png" width="240" height="240" alt="Ласточкин хвост">
                      <div class="item-description">
-                        <h1 class="item-title"><a href="#">Dovetail</a></h1>
+                         <a class="item-title" href="#"> <h2>Dovetail</h2>
+                         </a>
                         <p>Интернет-магазин с галереей товаров</p>
                         <a class="btn-red" href="#">14000 р.</a>
                      </div>
+                    </div>
 				</div>
-				<ul class="pages-num">
-					<li class="active">
-						<a href="#">1</a>
-					</li>
-					<li >
-						<a href="#">2</a>
-					</li>
-					<li>
-						<a href="#">3</a>
-					</li>
-					<li>
-						<a href="#">Следующая</a>
-					</li>
-				</ul>
+				<div class="pages-num">
+					<a href="#" class="btn">1</a>
+                    <a href="#" class="btn">2</a>
+                    <a href="#" class="btn">3</a>
+                    <a href="#" class="btn gallery-next">следующая</a>
+	  	        </div>
+                </div>
 			  <div class="maps">
-				  <div class="maps-visual">
 				     <img src="img/location.jpg" width="100%" height="416" alt="Карта проезда">
-				  </div>
 				<div class="maps-info">
-					<p>Nёrds design studio</p>
+					<p>NЁRDS DESIGN STUDIO</p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
 					<a href="#" class="feedback">Напишите нам</a>
 				</div>
 			</div>
-			<div class="feedback-form">
-				<form action="" class="write-us" method="post">
-					<label for="username">Ваше имя:</label>
-					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-					<label for="useremail">Ваш e-mail:</label>
-					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
-					<label for="usermessage">Текст письма:</label>
-					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
-					<button class="btn" type="submit">Отправить</button>
-				</form>
-				<button class="btn-сlose">Закрыть</button>
-			</div>
 		</main>
 		<footer class="footer">
+		   <div class="container clearfix">
 			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
 				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
 				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
 			</div>
 			<div class="sale">
-				<h2>Давайте дружить, это выгодно!</h2>
+				<span class="footer-slogan">Давайте дружить, это выгодно!</span>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
+            </div>
 		</footer>
+		<div class="write-us">
+        <form action="/echo" method="post">
+        <div class="close-window"></div>
+        <label for="name-field">Ваше имя</label>
+      	<input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
+      	<label for="email-field">Ваш e-mail</label>
+      	<input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
+      	<label for="cooment-field">Текст письма:</label>
+      	<textarea name="comment" id="cooment-field" rows="10">В свободной форме</textarea>
+      	<button type="submit" class="btn-feedback">Отправить</button>
+      </form>
 	</body>
 </html>

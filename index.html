@@ -6,7 +6,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header clearfix">
+		<header class="main-header">
 			<div class="container">
 				<div class="logo">
 				    <a href="/">
@@ -29,44 +29,52 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="user-block">
+				<div class="user-block clearfix">
 					<a class="basket" href="#">Корзина</a>
 				</div>
-			</div>
-		</header>
-		<main class="container">
-			<div class="slides clearfix">
-				<div class="slide-1 clearfix">
-				   <div class="slide-1-description">
-					<p>Долго, дорого, скрупулезно.</p>
+			
+		
+		
+			<div class="slides">
+				<div class="slide clearfix">
+				   <div class="slide-description">
+					<h2>Долго, дорого, скурпулезно.</h2>
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 					<a class="read-more" href="#">Узнать больше</a>
 					</div> 
-					<div>
-		            <img src="img/gadgets.png" width="338" height="231" alt="Гаджеты"> 
+					<div class="slide-right">
+		            <img src="img/gadgets.png" width="338" height="221" alt="Гаджеты"> 
 		            </div>
 				</div>
-				<div class="slide-2 clearfix">
-				   <div class="slide-2-description">
-					<p>Любите ли вы математику, как любим ее мы?</p>
+				<div class="slide">
+				   <div class="slide-description">
+					<h2>Любите ли вы математику, как любим ее мы?</h2>
 					<p>Нашим дизайнерам мы уделяем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
 					<a class="read-more" href="#">Узнать больше</a>
 					</div>
-					<div>
+					<div class="slide-right">
 		            <img src="img/calculator.png" width="230" height="249" alt="Гаджеты"> 
 		            </div>
 				</div>
-				<div class="slide-3 clearfix">
-				   <div class="slide-3-description">
-					<p>Только наркотики, только хардкор!</p>
+				<div class="slide">
+				   <div class="slide-description">
+					<h2>Только наркотики, только хардкор!</h2>
 					<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
 					<a class="read-more" href="#">Узнать больше</a>
 					</div>
-					<div>
-		            <img src="img/robot.png" width="333" height="231" alt="Гаджеты"> 
+					<div class="slide-right">
+		            <img src="img/robot.png" width="333" height="319" alt="Гаджеты"> 
 		            </div>
 				</div>
+				<div class="slider-num">
+        	<input type="radio" name="slider-radio" checked>
+					<input type="radio" name="slider-radio">
+        	<input type="radio" name="slider-radio">
+        </div>
 			</div>
+			</div>
+			</header>
+			<main class="container">
 			<section class="servises clearfix">
 				<div class="site">
 				   <div class="desktop">
@@ -93,21 +101,27 @@
 					<a href="#" class="order-item green-button">Заказать</a>
 				</div>
 			</section>
-			<div class="about clearfix">
-				<div class="about-us">
+			<div class="about">
+				<div class="about-us clearfix">
+				   <div class="content-left">
 					<span>Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
-					
+                </div>
+                <div class="content-right">
+                    <img src="img/nerds-logo02.png" width="187" height="75" alt="Наш логотип">
+                    <span>Since 2004</span>
+                </div>
+               </div> 
+                <div class="about-us2 clearfix"> 
+                  <div class="content-left">  
 	                <p>Выполняем заказы на разработку:</p>
 	                  <ul>
 	      	            <li>Веб-сайтов любой сложности</li>
 	      	            <li>Мобильных приложений для iOS и Android</li>
 	      	            <li>Слайдшоу и видео для корпоративных презентаций</li>
 	                  </ul>	
-
-				</div>
-				<div class="about-how">
-					<img src="img/nerds-logo02.png" width="187" height="75" alt="Наш логотип">
+                    </div>
+				<div class="content-right">
 					<p>Как мы работаем:</p>
 					<ul>
 						<li>С самоотдачей 146%</li>
@@ -115,6 +129,7 @@
 						<li>По предоплате 50%</li>
 					</ul>
 				</div>
+                </div>
 			</div>
 			<div class="sponsorship">
 				<a class="glukhanko-logo" href="#">
@@ -128,9 +143,7 @@
 				</a>
 			</div>
 			<div class="maps">
-				<div class="maps-visual">
 				    <img src="img/location.jpg" width="100%" height="416" alt="Карта">
-				</div>
 				<div class="maps-info">
 					<p>NЁRDS DESIGN STUDIO</p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -138,30 +151,30 @@
 					<a href="#" class="feedback">напишите нам</a>
 				</div>
 			</div>
-			<div class="feedback-form">
-				<form action="" class="write-us" method="post">
-					<label for="username">Ваше имя:</label>
-					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-					<label for="useremail">Ваш e-mail:</label>
-					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
-					<label for="usermessage">Текст письма:</label>
-					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
-					<button class="btn" type="submit">Отправить</button>
-				</form>
-				<button class="btn-сlose">Закрыть</button>
-			</div>
-			</div>
 		</main>
 		<footer class="footer">
+		   <div class="container clearfix">
 			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
 				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
 				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
 			</div>
 			<div class="sale">
-				<h2>Давайте дружить, это выгодно!</h2>
+				<span class="footer-slogan">Давайте дружить, это выгодно!</span>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
+            </div>
 		</footer>
+		<div class="write-us">
+        <form action="/echo" method="post">
+        <div class="close-window"></div>
+        <label for="name-field">Ваше имя</label>
+      	<input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
+      	<label for="email-field">Ваш e-mail</label>
+      	<input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
+      	<label for="cooment-field">Текст письма:</label>
+      	<textarea name="comment" id="cooment-field" rows="10">В свободной форме</textarea>
+      	<button type="submit" class="btn-feedback">Отправить</button>
+      </form>
 	</body>
 </html>
