@@ -122,7 +122,7 @@
        padding: 0 15px;
        margin-left: 70px;
        font-size: 16px;
-       line-height: 8, 56px;
+       line-height: 56px;
        text-align: center;
    }
    
@@ -647,7 +647,7 @@
    }
    
    .network input[type="radio"]:checked+label::before {
-       content: '\25cf';
+       content: "\25cf";
    }
    
    .features {
@@ -694,7 +694,7 @@
    }
    
    .features input[type="checkbox"]:checked+label::before {
-       content: '\2611';
+       content: "\2611";
    }
    
    .btn-filter {
