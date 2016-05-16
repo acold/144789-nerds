@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Нёрдс каталог</title>
-		<link href="css/style.css" rel="stylesheet">
-	</head>
-	<body>
-		<header class="main-header">
-			<div class="container clearfix">
-				<div class="logo">
-					<a href="/">
-						<img src="img/nerds-logo.png" width="139" height="56" alt="логотип">
-					</a>
-				</div>
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">Студия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li class="active">
-							Магазин
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="user-block">
-					<a class="basket" href="#">Корзина</a>
-				</div>
-				<span class="header-slogan">Добро пожаловать в магазин  готовых макетов</span>
+<head>
+	<meta charset="utf-8">
+	<title>Нёрдс</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<div class="index-logo">
+        <img src="img/nerds-logo.png" width="139" height="56" alt="Нёрдс">
+      </div>
+			<nav class="main-navigation">
+				<ul>
+					<li class="active">
+						<a href="#">Студия</a>
+					</li>
+					<li>
+						<a href="#">Клиенты</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+      	<a href="#" class="basket">Корзина</a>
 			</div>
-		</header>
-		<main class="container">
-			<div class="sidebar">
-					<form name="filter" action="/echo" method="get">
+			<div class="header-slogan">Добро пожаловать в магазин  готовых макетов</div>
+		</div>
+	</header>
+	<main class="container">
+	    <div class="catalog-box" clearfix>
+		<div class="sidebar">
+			<form name="filter" action="/echo" method="get">
 				<fieldset>
 			  	<legend>Стоимость:</legend>
 			  	<div class="price-range-wrapper">
@@ -93,108 +93,118 @@
         <input type="submit" value="отправить">
 			</form>
 		</div>
-           <div class="index-content-catalog">
-             <div class="sort-item clearfix">
-				<p>Сортировать:</p>
-				<div class="sorting-btn-wrapper">
-	  			  <a class="sorting-btn" href="#">По цене</a>
-	  			  <a class="sorting-btn" href="#">По типу</a>
-	  			  <a class="sorting-btn" href="#">По функционалу</a>
-	  		    </div>
-	  		    <div class="sorting-item-wrapper">
-					<button class="up"></button>
-					<button class="down"></button>
-                 </div>	
-				</div>
-				<div class="gallery">
-				<div class="item-list">
-					<img src="img/aviator.png" width="240" height="240" alt="Авиатор">
-                    <div class="item-description">
-                       <a class="item-title" href="#"> <h2>Aviator</h2>
-                        </a>
-                       <p>Одностраничный макет с авторским дизайном</p>
-                       <a class="btn-red" href="#">8000 P.</a>
-					</div>
-                </div>	
-				<div class="item-list">
-				     <img src="img/sunset.png" width="240" height="240" alt="Закат">
-                     <div class="item-description">
-                         <a class="item-title" href="#"> <h2>Sunset</h2>
-                         </a>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <a class="btn-red" href="#">10000 P.</a>
-                      </div>
-				</div>
-				<div class="item-list">
-				     <img src="img/forte.png" width="240" height="240" alt="Форте">
-                     <div class="item-description">
-                         <a class="item-title" href="#"> <h2>Forte</h2>
-                         </a>
-                        <p>Отличный макет для личного блога</p>
-                        <a class="btn-red" href="#">5000 P.</a>
-                     </div>
-				</div>
-				<div class="item-list">
-				     <img src="img/modern-organic.png" width="240" height="240" alt="Современный">
-                     <div class="item-description">
-                         <a class="item-title" href="#"> <h2>Modern Organic Thai</h2>
-                         </a>
-                        <p>Сайт для ресторана быстрого питания</p>
-                        <a class="btn-red" href="#">12000 P.</a>
-                     </div>
-				</div>
-				<div class="item-list">
-		             <img src="img/avenue.png" width="240" height="240" alt="Авеню">
-                     <div class="item-description">
-                         <a class="item-title" href="#"> <h2>Avenue</h2>
-                         </a>
-                        <p>Макет для блога о путешествиях</p>
-                        <a class="btn-red" href="#">8000 P.</a>
-                     </div>
-				</div>
-				<div class="item-list">
-				     <img src="img/dovetail.png" width="240" height="240" alt="Ласточкин хвост">
-                     <div class="item-description">
-                         <a class="item-title" href="#"> <h2>Dovetail</h2>
-                         </a>
-                        <p>Интернет-магазин с галереей товаров</p>
-                        <a class="btn-red" href="#">14000 р.</a>
-                     </div>
-                    </div>
-				</div>
-				<div class="pages-num">
-					<a href="#" class="btn">1</a>
-                    <a href="#" class="btn">2</a>
-                    <a href="#" class="btn">3</a>
-                    <a href="#" class="btn gallery-next">следующая</a>
-	  	        </div>
-                </div>
-			  <div class="maps">
-				     <img src="img/location.jpg" width="100%" height="416" alt="Карта проезда">
-				<div class="maps-info">
-					<p>NЁRDS DESIGN STUDIO</p>
-					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="feedback">Напишите нам</a>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-		   <div class="container clearfix">
+    <div class="index-content-catalog">
+	  	<div class="gallery-sorting-tools clearfix">
+	  		<p>Сортировать</p>
+	  		<div class="sorting-btn-wrapper">
+	  			<a class="sorting-btn" href="#">По цене</a>
+	  			<a class="sorting-btn" href="#">По типу</a>
+	  			<a class="sorting-btn" href="#">По функционалу</a>
+	  		</div>
+	  		<div class="sorting-item-wrapper">
+	  			<button class="sorting-item"></button>
+	  			<button class="sorting-item"></button>
+	  		</div>
+	  	</div>
+	  	<div class="gallery">
+	  		<div class="gallery-item">
+	  			<img src="img/aviator.png" width="240" height="240" alt="Aviator">
+        	<div class="gallery-item-description">
+        		<a class="gallery-item-name" href="#">
+        			<h2>Aviator</h2>
+        		</a>
+        		<p>Одностраничный макет с авторским дизайном</p>
+        		<a class="btn" href="#">8000 р.</a>
+        	</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<img src="img/sunset.png" width="240" height="240" alt="Sunset">
+        	<div class="gallery-item-description">
+        		<a class="gallery-item-name" href="#">
+        			<h2>Sunset</h2>
+        		</a>
+        		<p>Интернет-магазин с личным кабинетом</p>
+        		<a class="btn" href="#">10000 р.</a>
+        	</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<img src="img/forte.png" width="240" height="240" alt="Forte">
+        	<div class="gallery-item-description">
+        		<a class="gallery-item-name" href="#">
+        			<h2>Forte</h2>
+        		</a>
+        		<p>Отличный макет для личного блога</p>
+        		<a class="btn" href="#">5000 р.</a>
+        	</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<img src="img/modern-organic.png" width="240" height="240" alt="Modern organic thai">
+        	<div class="gallery-item-description">
+        		<a class="gallery-item-name" href="#">
+        			<h2>Modern organic thai</h2>
+        		</a>
+        		<p>Сайт для ресторана быстрого питания</p>
+        		<a class="btn" href="#">12000 р.</a>
+        	</div>
+	  		</div>
+	  		<div class="gallery-item">
+        	<img src="img/avenue.png" width="240" height="240" alt="Avenue" >
+        	<div class="gallery-item-description">
+        		<a class="gallery-item-name" href="#">
+							<h2>Avenue</h2>
+						</a>
+        		<p>Макет для блога  о путешествиях</p>
+        		<a class="btn" href="#">8000 р.</a>
+        	</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<img src="img/dovetail.png" width="240" height="240" alt="Dovetail">
+        	<div class="gallery-item-description">
+        		<a class="gallery-item-name" href="#">
+        			<h2>Dovetail</h2>
+        		</a>
+        		<p>Интернет-магазин с галереей товаров</p>
+        		<a class="btn" href="#">14000 р.</a>
+        	</div>
+	  		</div>
+      </div>
+	    <div class="gallery-paginator">
+	  		<a href="#" class="btn">1</a>
+        <a href="#" class="btn">2</a>
+        <a href="#" class="btn">3</a>
+        <a href="#" class="btn gallery-next">следующая</a>
+	  	</div>
+		</div>
+		<div class="map-catalog">
+      <img src="img/location.jpg" width="100%" height="416" alt="map">
+  		<div class="contacts">
+  			<div class="contacts-title">Nёrds design studio</div>
+  			<p>
+        191186, Санкт-Петербург,<br>
+  			ул. Б. Конюшенная, 19/8<br>
+  			тел. +7(812)275-75-75
+        </p>
+  			<a href="#" class="btn-contacts">Напишите нам</a>
+  		</div>
+  	</div>
+  	</div>
+	</main>
+	<footer class="main-footer">
+	 	<div class="container clearfix">
 			<div class="footer-social">
-				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
-				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
-				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
-			</div>
-			<div class="sale">
-				<span class="footer-slogan">Давайте дружить, это выгодно!</span>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-            </div>
-		</footer>
-		<div class="write-us">
-        <form action="/echo" method="post">
-        <div class="close-window"></div>
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+      </div>
+      <div class="footer-text-wrapper">
+      	<div class="footer-slogan">Давайте дружить, это выгодно</div>
+      	<p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+		</div>
+	</footer>
+	<div class="write-us">
+    <form action="/echo" method="post">
+      <div class="close-window"></div>
         <label for="name-field">Ваше имя</label>
       	<input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
       	<label for="email-field">Ваш e-mail</label>
@@ -203,5 +213,6 @@
       	<textarea name="comment" id="cooment-field" rows="10">В свободной форме</textarea>
       	<button type="submit" class="btn-feedback">Отправить</button>
       </form>
-	</body>
+  </div>
+</body>
 </html>
